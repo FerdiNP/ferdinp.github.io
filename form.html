@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/310fedaa37.js"></script>
+    <link rel="stylesheet" href="css/form.css">
+
+    <title> Dashboard </title>
+</head>
+
+<body>
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default nav-side">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#">Dashboard Page</a>
+                <a class="navbar-brand hidden" href="#">D</a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <h3 class="menu-title">Menu</h3><!-- /.menu-title -->
+                  <li>
+                      <a href="dashboard.html"> <i class="menu-icon fa fa-home"></i>Home </a>
+                  </li>
+                  <li>
+                      <a href="profil.html"> <i class="menu-icon fa fa-user"></i>Profile </a>
+                  </li>
+                  <h3 class="menu-title">Features</h3><!-- /.menu-title -->
+                  <li>
+                      <a href="#"> <i class="menu-icon fa fa-wpforms"></i>Form </a>
+                  </li>
+                  <li>
+                      <a href="inbox.html"> <i class="menu-icon fa fa-inbox"></i>Inbox</a>
+
+                  </li>
+                  <h3 class="menu-title"> Data </h3><!-- /.menu-title -->
+                  <li>
+                      <a href="table.html"> <i class="menu-icon fa fa-table"></i>Table</a>
+                  </li>
+                  <li>
+                      <a href="calender.html"> <i class="menu-icon fa fa-calendar"></i>Calendar </a>
+                  </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+<div>
+    <div id="right-panel" class="right-panel"  style="background:  #f1f2f7; font-family: 'Open Sans'sans-serif !important;font-size: 16px; width: 100%;">
+
+    		<!-- Header-->
+    		<header id="header" class="header px-5">
+
+    				<div class="header-menu">
+
+    						<div class="col-sm-7">
+    								<div class="header-left">
+    										<a id="menuToggle" class="search-trigger pull-left"><i class="fa fa-bars"></i></a>
+    										<div class="dropdown px-3">
+    											<form class="search-container">
+    												<input type="text" id="search-bar" placeholder="What can I help you ? :)">
+    												<a class="search-icon" href="#"><i class="fa fa-search"></i></a>
+    											</form>
+    										</div>
+
+    										<div class="dropdown for-message">
+    												<button class="btn btn-secondary dropdown-toggle" type="button"
+    														id="message"
+    														data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    														<i class="fa fa-bell"></i>
+    												</button>
+    										</div>
+    								</div>
+    						</div>
+
+    						<div class="col-sm-5">
+    								<div class="user-area dropdown float-right">
+    										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    												<img class="user-avatar rounded-circle" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="User Avatar">
+    										</a>
+    										<div class="user-menu dropdown-menu">
+    												<a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+
+    												<a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+
+    												<a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+    										</div>
+    									</div>
+    							</div>
+    							</div>
+        </header><!-- /header -->
+        <br /> <br />
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="content mt-3">
+
+           <div class="col-lg-12 pb-5">
+               <div class="card">
+                   <div class="card-header">
+                       <strong class="card-title" style="font-size:1.8rem;">Form</strong>
+                   </div>
+                   <div class="card-body">
+                       <!-- Credit Card -->
+                       <div id="pay-invoice">
+
+                           <button type="button" class="btn btn-primary btn1" data-toggle="modal" data-target="#exampleModal" data-keyboard="false" data-backdrop="static" style="border-radius:5px;">
+                               Add More
+                           </button>
+
+                           <!-- Modal -->
+                           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                               <div class="modal-dialog modal-dialog-centered" role="document">
+                                   <div class="modal-content">
+                                       <div class="modal-header">
+                                           <h2 class="modal-title" id="exampleModalLabel">Form</h2>
+                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size:25px;">
+                                               <span aria-hidden="true">&times;</span>
+                                           </button>
+                                       </div>
+                                       <div class="modal-body">
+                                           <div class="card-body">
+                                               <table class="tform">
+                                                   <tr class="trform">
+                                                       <td style="border: none;">
+                                                           <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                                                               <div class="form-group">
+                                                                   <label>Name*</label><label class="validation-error hide" id="nameValidationError">This field is required.</label>
+                                                                   <input type="text" name="name" id="name">
+                                                               </div>
+                                                               <div class="form-group">
+                                                                   <label>Email</label>
+                                                                   <input type="email" name="email" id="email">
+                                                               </div>
+                                                               <div class="form-group">
+                                                                   <label>No. Telp</label>
+                                                                   <input type="tel" name="tel" id="tel">
+                                                               </div>
+                                                               <div class="form-group">
+                                                                   <label>City</label>
+                                                                   <input type="text" name="city" id="city">
+                                                               </div>
+                                                               <p style="color:red;">* Required</p>
+                                                               <div class="form-action-buttons text-center">
+                                                                   <input class="btn btn-primary" type="submit" value="Submit"  onClick="onFormSubmit()" data-dismiss="modal">
+                                                               </div>
+                                                           </form>
+                                                       </td>
+                                                   </tr>
+                                               </table>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div> <!-- .content -->
+                 </div>
+
+
+
+               <div class="card">
+                   <div class="card-header">
+                       <strong class="card-title" style="font-size:1.8rem;">Table List</strong>
+                   </div>
+                   <td class="tdform">
+                       <table class="list" id="List">
+                           <thead>
+                               <tr class="trform">
+                                   <th style="width: 25%;">Name</th>
+                                   <th style="width: 25%;">Email</th>
+                                   <th style="width: 20%;">No. Telp</th>
+                                   <th style="width: 20%;">City</th>
+                                   <th style="width: 10%;">Edit</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+
+                           </tbody>
+                       </table>
+                   </td>
+               </div>
+             </div>
+             </div>
+
+<footer style="font-size:16px;">
+    <p class="p1">
+      &copy; Created by Ferdi Naufal
+    </p>
+    <p class="p2">
+      Powered by
+      <a href="https://www.gamelab.id/" target="_blank"> Gamelab.id </a>
+    </p>
+
+</footer>
+</div>
+</div>
+                 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+                 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+                 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+                 <script type="text/javascript">
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+jQuery(document).ready(function($) {
+
+	"use strict";
+
+	[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+		new SelectFx(el);
+	} );
+
+	jQuery('.selectpicker').selectpicker;
+
+
+	$('#menuToggle').on('click', function(event) {
+		$('body').toggleClass('open');
+	});
+
+	$('.search-trigger').on('click', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		$('.search-trigger').parent('.header-left').addClass('open');
+	});
+
+	$('.search-close').on('click', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		$('.search-trigger').parent('.header-left').removeClass('open');
+	});
+});
+
+ var selectedRow = null
+
+                    function onFormSubmit() {
+                		    if (validate()) {
+                		        var formData = readFormData();
+                		        if (selectedRow == null)
+                		            insertNewRecord(formData);
+                		        else
+                		            updateRecord(formData);
+                		        resetForm();
+                		    }
+                		}
+
+                    function readFormData() {
+                        var formData = {};
+                        formData["name"] = document.getElementById("name").value;
+                        formData["email"] = document.getElementById("email").value;
+                        formData["tel"] = document.getElementById("tel").value;
+                        formData["city"] = document.getElementById("city").value;
+                        return formData;
+                    }
+
+                    function insertNewRecord(data) {
+                        var table = document.getElementById("List").getElementsByTagName('tbody')[0];
+                        var row = table.insertRow(table.length);
+                        var cell1 = row.insertCell(0);
+                        cell1.innerHTML = data.name;
+                        var cell2 = row.insertCell(1);
+                        cell2.innerHTML = data.email;
+                        var cell3 = row.insertCell(2);
+                        cell3.innerHTML = data.tel;
+                        var cell4 = row.insertCell(3);
+                        cell4.innerHTML = data.city;
+                        var cell5 = row.insertCell(4);
+                        cell5.innerHTML = "<button type=button class='btn btn-primary' data-toggle=modal data-target=#exampleModal onClick=onEdit(this) style=border-radius: 5px;>Edit</button>  <button type=button class='btn btn-danger' onClick=onDelete(this) style=border-radius: 5px;>Delete</a>";
+                    }
+
+                    function resetForm() {
+                        document.getElementById("name").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("tel").value = "";
+                        document.getElementById("city").value = "";
+                        selectedRow = null;
+                    }
+
+                    function onEdit(td) {
+                        selectedRow = td.parentElement.parentElement;
+                        document.getElementById("name").value = selectedRow.cells[0].innerHTML;
+                        document.getElementById("email").value = selectedRow.cells[1].innerHTML;
+                        document.getElementById("tel").value = selectedRow.cells[2].innerHTML;
+                        document.getElementById("city").value = selectedRow.cells[3].innerHTML;
+                    }
+
+                    function updateRecord(formData) {
+                        selectedRow.cells[0].innerHTML = formData.name;
+                        selectedRow.cells[1].innerHTML = formData.email;
+                        selectedRow.cells[2].innerHTML = formData.tel;
+                        selectedRow.cells[3].innerHTML = formData.city;
+                    }
+
+                    function onDelete(td) {
+                        if (confirm('Are you sure to delete this record ?')) {
+                            row = td.parentElement.parentElement;
+                            document.getElementById("List").deleteRow(row.rowIndex);
+                            resetForm();
+                        }
+                    }
+
+                    function validate() {
+                        isValid = true;
+                        if (document.getElementById("name").value == "") {
+                            isValid = false;
+                            document.getElementById("nameValidationError").classList.remove("hide");
+                        } else {
+                            isValid = true;
+                            if (!document.getElementById("nameValidationError").classList.contains("hide"))
+                                document.getElementById("nameValidationError").classList.add("hide");
+                        }
+                        return isValid;
+                    }
+
+                    function myFunction() {
+                        alert("Success!");
+                    }
+                 </script>
+</body>
+
+</html>

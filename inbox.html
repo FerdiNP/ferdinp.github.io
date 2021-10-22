@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/310fedaa37.js"></script>
+    <link rel="stylesheet" href="css/inbox.css">
+
+    <title> Inbox </title>
+  </head>
+  <body>
+
+     <aside id="left-panel" class="left-panel">
+    		<nav class="navbar navbar-expand-sm navbar-default nav-side">
+
+    				<div class="navbar-header">
+    						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+    						</button>
+    						<a class="navbar-brand" href="#">Dashboard Page</a>
+    						<a class="navbar-brand hidden" href="#">D</a>
+    				</div>
+
+    				<div id="main-menu" class="main-menu collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <h3 class="menu-title">Menu</h3><!-- /.menu-title -->
+                  <li>
+                      <a href="dashboard.html"> <i class="menu-icon fa fa-home"></i>Home </a>
+                  </li>
+                  <li>
+                      <a href="profil.html"> <i class="menu-icon fa fa-user"></i>Profile </a>
+                  </li>
+                  <h3 class="menu-title">Features</h3><!-- /.menu-title -->
+                  <li>
+                      <a href="form.html"> <i class="menu-icon fa fa-wpforms"></i>Form </a>
+                  </li>
+                  <li>
+                      <a href="#"> <i class="menu-icon fa fa-inbox"></i>Inbox</a>
+
+                  </li>
+                  <h3 class="menu-title"> Data </h3><!-- /.menu-title -->
+                  <li>
+                      <a href="table.html"> <i class="menu-icon fa fa-table"></i>Table</a>
+                  </li>
+                  <li>
+                      <a href="calender.html"> <i class="menu-icon fa fa-calendar"></i>Calendar </a>
+                  </li>
+              </ul>
+    				</div><!-- /.navbar-collapse -->
+    		</nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+<div>
+    <div id="right-panel" class="right-panel"  style="background:  #f1f2f7; font-family: 'Open Sans'sans-serif !important;font-size: 16px; width: 100%;">
+
+    		<!-- Header-->
+    		<header id="header" class="header">
+
+    				<div class="header-menu">
+
+    						<div class="col-sm-7">
+    								<div class="header-left">
+    										<a id="menuToggle" class="search-trigger pull-left"><i class="fa fa-bars"></i></a>
+    										<div class="dropdown px-3">
+    											<form class="search-container">
+    												<input type="text" id="search-bar" placeholder="What can I help you ? :)">
+    												<a class="search-icon" href="#"><i class="fa fa-search"></i></a>
+    											</form>
+    										</div>
+
+    										<div class="dropdown for-message">
+    												<button class="btn btn-secondary dropdown-toggle" type="button"
+    														id="message"
+    														data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    														<i class="fa fa-bell"></i>
+    												</button>
+    										</div>
+    								</div>
+    						</div>
+
+    						<div class="col-sm-5">
+    								<div class="user-area dropdown float-right">
+    										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    												<img class="user-avatar rounded-circle" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="User Avatar">
+    										</a>
+    										<div class="user-menu dropdown-menu">
+    												<a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+
+    												<a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+
+    												<a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+    										</div>
+    									</div>
+    							</div>
+        </header><!-- /header -->
+        <br /> <br />
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Inbox</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="content" style="padding-bottom:25px;padding-top:10px;">
+            <div class="col-md-12">
+              <div class="card card-primary card-outline" style="margin-bottom: 0px !important;">
+                <div class="card-header">
+                  <h3 class="card-title" style="font-size:1.8rem;">Inbox</h3>
+
+
+                  <!-- /.card-tools -->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <div class="mailbox-controls">
+                    <!-- Check all button -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="Delete">
+                        <i class="fa fa-trash" style="font-size:20px;"></i>
+                      </button>
+                      <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="Refresh">
+                        <i class="fa fa-refresh" style="font-size:20px;"></i>
+                      </button>
+                      <button type="button" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="bottom" title="Report Spam">
+                        <i class="fa fa-flag" style="font-size:20px;"></i>
+                      </button>
+                    </div>
+                    <!-- /.btn-group -->
+                    <div class="float-right">
+                      1-15/50
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-sm">
+                          <i class="fa fa-chevron-left"></i>
+                        </button>
+                        <button type="button" class="btn btn-default btn-sm">
+                          <i class="fa fa-chevron-right"></i>
+                        </button>
+                      </div>
+                      <!-- /.btn-group -->
+                    </div>
+                    <!-- /.float-right -->
+                  </div>
+                  <div class="table-responsive mailbox-messages">
+                    <table class="table table-hover">
+                      <tbody>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">1 mins ago</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">12 mins ago</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b> - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">40 mins ago</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">4 hours ago</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">10 hours ago</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">21 hours ago</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">Yesterday</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">Yesterday</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">Yesterday</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">2 days ago</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">3 days ago</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">4 days ago</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">5 days ago</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">6 days ago</td>
+                      </tr>
+                      <tr>
+                        <td class="mailbox-star text-center"><a href="#"><i class="fa fa-star-o text-warning"></i></a></td>
+                        <td class="mailbox-name text-center"><a href="#">Zera</a></td>
+                        <td class="mailbox-subject"><b>Lorem Ipsum</b>- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        </td>
+
+                        <td class="mailbox-date text-center">6 days ago</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    <!-- /.table -->
+                  </div>
+                  <!-- /.mail-box-messages -->
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer p-0">
+                  <div class="mailbox-controls">
+                    <!-- Check all button -->
+                    <!-- /.btn-group -->
+                    <div class="float-right">
+                      1-15/50
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-sm">
+                          <i class="fa fa-chevron-left"></i>
+                        </button>
+                        <button type="button" class="btn btn-default btn-sm">
+                          <i class="fa fa-chevron-right"></i>
+                        </button>
+                      </div>
+                      <!-- /.btn-group -->
+                    </div>
+                    <!-- /.float-right -->
+                  </div>
+                </div>
+              </div>
+              <!-- /.card -->
+              <div class="d-grid gap-2 col-12 mx-auto text-center pb-5 pt-4">
+                <button class="btn btn-primary py-3 px-5" type="button" style="border-radius:8px;width:50%;"> Send Messages</button>
+              </div>
+            </div>
+            <!-- /.col -->
+          <!-- /.row -->
+        </section>
+
+<footer>
+    <p class="p1">
+      &copy; Created by Ferdi Naufal
+    </p>
+    <p class="p2">
+      Powered by
+      <a href="https://www.gamelab.id/" target="_blank"> Gamelab.id </a>
+    </p>
+
+</footer>
+</div> <!-- .content -->
+</div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+        $(function () {
+$('[data-toggle="tooltip"]').tooltip()
+})
+
+
+jQuery(document).ready(function($) {
+
+	"use strict";
+
+	[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+		new SelectFx(el);
+	} );
+
+	jQuery('.selectpicker').selectpicker;
+
+
+	$('#menuToggle').on('click', function(event) {
+		$('body').toggleClass('open');
+	});
+
+	$('.search-trigger').on('click', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		$('.search-trigger').parent('.header-left').addClass('open');
+	});
+
+	$('.search-close').on('click', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		$('.search-trigger').parent('.header-left').removeClass('open');
+	});
+});
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+        </script>
+
+  </body>
+</html>

@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/310fedaa37.js"></script>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title> Dashboard </title>
+  </head>
+  <body>
+    <aside id="left-panel" class="left-panel">
+    		<nav class="navbar navbar-expand-sm navbar-default nav-side">
+
+    				<div class="navbar-header">
+    						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+    						</button>
+    						<a class="navbar-brand" href="#">Dashboard Page</a>
+    						<a class="navbar-brand hidden" href="#">D</a>
+    				</div>
+
+    				<div id="main-menu" class="main-menu collapse navbar-collapse">
+              <ul class="nav navbar-nav">
+                  <h3 class="menu-title">Menu</h3><!-- /.menu-title -->
+                  <li>
+                      <a href="#"> <i class="menu-icon fa fa-home"></i>Home </a>
+                  </li>
+                  <li>
+                      <a href="profil.html"> <i class="menu-icon fa fa-user"></i>Profile </a>
+                  </li>
+                  <h3 class="menu-title">Features</h3><!-- /.menu-title -->
+                  <li>
+                      <a href="form.html"> <i class="menu-icon fa fa-wpforms"></i>Form </a>
+                  </li>
+                  <li>
+                      <a href="inbox.html"> <i class="menu-icon fa fa-inbox"></i>Inbox</a>
+
+                  </li>
+                  <h3 class="menu-title"> Data </h3><!-- /.menu-title -->
+                  <li>
+                      <a href="table.html"> <i class="menu-icon fa fa-table"></i>Table</a>
+                  </li>
+                  <li>
+                      <a href="calender.html"> <i class="menu-icon fa fa-calendar"></i>Calendar </a>
+                  </li>
+              </ul>
+    				</div><!-- /.navbar-collapse -->
+    		</nav>
+    </aside><!-- /#left-panel -->
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+<div>
+    <div id="right-panel" class="right-panel"  style="background:  #f1f2f7; font-family: 'Open Sans'sans-serif !important;font-size: 16px; width: 100%;">
+
+    		<!-- Header-->
+    		<header id="header" class="header px-5">
+
+    				<div class="header-menu">
+
+    						<div class="col-sm-7">
+    								<div class="header-left">
+    										<a id="menuToggle" class="search-trigger pull-left"><i class="fa fa-bars"></i></a>
+    										<div class="dropdown px-3">
+    											<form class="search-container">
+    												<input type="text" id="search-bar" placeholder="What can I help you ? :)">
+    												<a class="search-icon" href="#"><i class="fa fa-search"></i></a>
+    											</form>
+    										</div>
+
+    										<div class="dropdown for-message">
+    												<button class="btn btn-secondary dropdown-toggle" type="button"
+    														id="message"
+    														data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    														<i class="fa fa-bell"></i>
+    												</button>
+    										</div>
+    								</div>
+    						</div>
+
+    						<div class="col-sm-5">
+    								<div class="user-area dropdown float-right">
+    										<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    												<img class="user-avatar rounded-circle" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="User Avatar">
+    										</a>
+    										<div class="user-menu dropdown-menu">
+    												<a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+
+    												<a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+
+    												<a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+    										</div>
+    									</div>
+    							</div>
+    							</div>
+        </header><!-- /header -->
+        <br /> <br />
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+<div class="content mt-3">
+
+  <div class="col-sm-6 col-lg-3 px-5">
+    <div class="card mb-3 bg-warning card-top" id="Card">
+      <div class="chart-wrapper px-0" style="height:120px; padding-top:30px;" height="70">
+          <canvas id="widgetChart1"></canvas>
+      </div>
+        <div class="card-body text-white">
+     <h2 class="card-title titlecard">1010</h2>
+    <p class="card-text titlecard1"> Lorem Ipsum </p>
+  </div>
+</div>
+  </div>
+
+  <div class="col-sm-6 col-lg-3 px-5">
+    <div class="card mb-3 bg-info card-top" id="Card">
+      <div class="chart-wrapper px-0" style="height:120px; padding-top:30px;" height="70">
+          <canvas id="widgetChart2"></canvas>
+      </div>
+        <div class="card-body text-white">
+    <h2 class="card-title titlecard">1010</h2>
+    <p class="card-text titlecard1"> Lorem Ipsum </p>
+  </div>
+</div>
+  </div>
+
+  <div class="col-sm-6 col-lg-3 px-5">
+    <div class="card mb-3 bg-danger" id="Card">
+      <div class="chart-wrapper px-0" style="height:120px; padding-top:30px;" height="70">
+          <canvas id="widgetChart3"></canvas>
+      </div>
+        <div class="card-body text-white">
+    <h2 class="card-title titlecard">1010</h2>
+    <p class="card-text titlecard1"> Lorem Ipsum </p>
+  </div>
+</div>
+  </div>
+
+  <div class="col-sm-6 col-lg-3 pb-4 px-5">
+    <div class="card mb-6 bg-success" id="Card">
+      <div class="chart-wrapper px-0" style="height:120px; padding-top:30px;" height="70">
+          <canvas id="widgetChart4"></canvas>
+      </div>
+        <div class="card-body text-white">
+    <h2 class="card-title titlecard1">1010</h2>
+    <p class="card-text titlecard1"> Lorem Ipsum </p>
+  </div>
+</div>
+  </div>
+
+  <div class="col-lg-4 col-md-6">
+      <div class="social-box facebook" id="Card">
+          <i class="fa fa-facebook"></i>
+          <span> Lorem Ipsum </span>
+      </div>
+      <!--/social-box-->
+  </div>
+
+  <div class="col-lg-4 col-md-6">
+      <div class="social-box twitter" id="Card">
+          <i class="fa fa-twitter"></i>
+          <span> Lorem Ipsum </span>
+      </div>
+      <!--/social-box-->
+  </div>
+  <!--/.col-->
+
+
+  <div class="col-lg-4 col-md-6">
+      <div class="social-box instagram" id="Card">
+          <i class="fa fa-instagram"></i>
+          <span> Lorem Ipsum </span>
+      </div>
+      <!--/social-box-->
+  </div>
+</div>
+
+
+<div class="col-xl-6" id="chart" style="padding-bottom:50px;">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4 class="card-title mb-0"> Chart</h4>
+                </div>
+                <!--/.col-->
+                <div class="col-sm-8 hidden-sm-down">
+                  <div class="btn-toolbar float-right" role="toolbar" aria-label="Toolbar with button groups">
+                    <ul class="nav nav-pills ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#revenue-chart" data-toggle="tab">Line</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#sales-chart" data-toggle="tab">Pie</a>
+                      </li>
+                    </ul>
+                    </div>
+                </div>
+                <!--/.col-->
+
+
+            </div>
+            <!--/.row-->
+            <div class="card-body">
+              <div class="tab-content">
+                <div class="chart-wrapper tab-pane mt-4 active" id="revenue-chart">
+                  <canvas id="linechart" style="height:200px;" height="200"></canvas>
+                </div>
+
+                <div class="chart-wrapper tab-pane mt-4" id="sales-chart">
+                  <canvas id="pieChart" style="height:200px;" height="200 "></canvas>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="card-footer pb-3 pt-5">
+            <ul>
+                <li>
+                    <div class="text-muted">New User</div>
+                    <strong>30.000 Users (30%)</strong>
+                    <div class="progress progress-xs mt-2" style="height: 5px;">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 30%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                <li class="hidden-sm-down">
+                    <div class="text-muted"> Online </div>
+                    <strong>70.000 Users (70%)</strong>
+                    <div class="progress progress-xs mt-2" style="height: 5px;">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="text-muted"> Total User</div>
+                    <strong>100.000 Users (100%)</strong>
+                    <div class="progress progress-xs mt-2" style="height: 5px;">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 100%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+                <li class="hidden-sm-down">
+                    <div class="text-muted"> Loss </div>
+                    <strong>10.000 Users (10%)</strong>
+                    <div class="progress progress-xs mt-2" style="height: 5px;">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 10%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="col-xl-6 col-lg-6" id="Content">
+    <section class="card">
+      <div class="calendar">
+        <div class="month">
+          <i class="fa fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fa fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div class="days"></div>
+      </div>
+    </section>
+</div>
+
+<div class="col-xl-6 col-lg-6" id="Content">
+    <div class="card">
+        <div class="card-header">
+            <h4>World</h4>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60835640.07615859!2d43.037117625431016!3d21.464090314391257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1631760668423!5m2!1sen!2sid"
+                height="255" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!-- /# card -->
+    </div> <!-- .content -->
+    </div> <!-- .content -->
+<footer style="font-size:16px;">
+    <p class="p1">
+      &copy; Created by Ferdi Naufal
+    </p>
+    <p class="p2">
+      Powered by
+      <a href="https://www.gamelab.id/" target="_blank"> Gamelab.id </a>
+    </p>
+
+</footer>
+</div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+            <script src="https://res.cloudinary.com/dnuaohahs/raw/upload/v1631868057/calender_rzdgvc.js"></script>
+            <script type="text/javascript">
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+
+jQuery(document).ready(function($) {
+
+	"use strict";
+
+	[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+		new SelectFx(el);
+	} );
+
+	jQuery('.selectpicker').selectpicker;
+
+
+	$('#menuToggle').on('click', function(event) {
+		$('body').toggleClass('open');
+	});
+
+	$('.search-trigger').on('click', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		$('.search-trigger').parent('.header-left').addClass('open');
+	});
+
+	$('.search-close').on('click', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		$('.search-trigger').parent('.header-left').removeClass('open');
+	});
+});
+
+            var ctx = document.getElementById("linechart").getContext("2d");
+        var data = {
+        labels: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+        datasets: [
+        {
+        label: "Profit",
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: "#29B0D0",
+        borderColor: "#29B0D0",
+        pointHoverBackgroundColor: "#29B0D0",
+        pointHoverBorderColor: "#29B0D0",
+        data: [200,193,190,192,182,150,140,132,121,125,145,120]
+        },
+        {
+        label: "Loss",
+        fill: false,
+        lineTension: 0.1,
+        backgroundColor: "#2A516E",
+        borderColor: "#2A516E",
+        pointHoverBackgroundColor: "#2A516E",
+        pointHoverBorderColor: "#2A516E",
+        data: [10,14,21,35,43,51,67,71,89,94,102,112]
+        }
+        ]
+        };
+
+        var myBarChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: {
+        legend: {
+        display: true
+        },
+        barValueSpacing: 100,
+        scales: {
+        yAxes: [{
+        ticks: {
+        stepSize: 40,
+        min: 0,
+        }
+        }],
+        xAxes: [{
+        gridLines: {
+        color: "rgba(0, 0, 0, 0)",
+        }
+        }]
+        }
+        }
+        });
+
+        var ctx = document.getElementById( "pieChart" );
+        var myChart = new Chart( ctx, {
+        		type: 'pie',
+        		data: {
+        				datasets: [ {
+        						data: [ 150, 100],
+        						backgroundColor: [
+        																"#32fca2",
+        																"#ff0000"
+        														],
+        						hoverBackgroundColor: [
+        																"#2dd68b",
+        																"#d90202"
+        														]
+
+        												} ],
+        				labels: [
+        												"Profit",
+        												"Loss"
+        										]
+        		},
+        		options: {
+        				responsive: true
+        		}
+        } );
+
+
+( function ( $ ) {
+    "use strict";
+
+
+    // Counter Number
+    $('.count').each(function () {
+        $(this).prop('Counter',0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 3000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+    //WidgetChart 1
+    var ctx = document.getElementById( "widgetChart1" );
+    ctx.height = 150;
+    var myChart = new Chart( ctx, {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            type: 'line',
+            datasets: [ {
+                data: [65, 59, 84, 84, 51, 55, 40],
+                label: 'Dataset',
+                backgroundColor: 'transparent',
+                borderColor: 'rgba(255,255,255,.55)',
+            }, ]
+        },
+        options: {
+
+            maintainAspectRatio: false,
+            legend: {
+                display: false
+            },
+            responsive: true,
+            scales: {
+                xAxes: [ {
+                    gridLines: {
+                        color: 'transparent',
+                        zeroLineColor: 'transparent'
+                    },
+                    ticks: {
+                        fontSize: 2,
+                        fontColor: 'transparent'
+                    }
+                } ],
+                yAxes: [ {
+                    display:false,
+                    ticks: {
+                        display: false,
+                    }
+                } ]
+            },
+            title: {
+                display: false,
+            },
+            elements: {
+                line: {
+                    borderWidth: 1
+                },
+                point: {
+                    radius: 4,
+                    hitRadius: 10,
+                    hoverRadius: 4
+                }
+            }
+        }
+    } );
+
+
+    //WidgetChart 2
+    var ctx = document.getElementById( "widgetChart2" );
+    ctx.height = 150;
+    var myChart = new Chart( ctx, {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            type: 'line',
+            datasets: [ {
+                data: [1, 18, 9, 17, 34, 22, 11],
+                label: 'Dataset',
+                backgroundColor: '#63c2de',
+                borderColor: 'rgba(255,255,255,.55)',
+            }, ]
+        },
+        options: {
+
+            maintainAspectRatio: false,
+            legend: {
+                display: false
+            },
+            responsive: true,
+            scales: {
+                xAxes: [ {
+                    gridLines: {
+                        color: 'transparent',
+                        zeroLineColor: 'transparent'
+                    },
+                    ticks: {
+                        fontSize: 2,
+                        fontColor: 'transparent'
+                    }
+                } ],
+                yAxes: [ {
+                    display:false,
+                    ticks: {
+                        display: false,
+                    }
+                } ]
+            },
+            title: {
+                display: false,
+            },
+            elements: {
+                line: {
+                    tension: 0.00001,
+                    borderWidth: 1
+                },
+                point: {
+                    radius: 4,
+                    hitRadius: 10,
+                    hoverRadius: 4
+                }
+            }
+        }
+    } );
+
+
+
+    //WidgetChart 3
+    var ctx = document.getElementById( "widgetChart3" );
+    ctx.height = 70;
+    var myChart = new Chart( ctx, {
+        type: 'line',
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            type: 'line',
+            datasets: [ {
+                data: [78, 81, 80, 45, 34, 12, 40],
+                label: 'Dataset',
+                backgroundColor: 'rgba(255,255,255,.2)',
+                borderColor: 'rgba(255,255,255,.55)',
+            }, ]
+        },
+        options: {
+
+            maintainAspectRatio: true,
+            legend: {
+                display: false
+            },
+            responsive: true,
+            scales: {
+                xAxes: [ {
+                    gridLines: {
+                        color: 'transparent',
+                        zeroLineColor: 'transparent'
+                    },
+                    ticks: {
+                        fontSize: 2,
+                        fontColor: 'transparent'
+                    }
+                } ],
+                yAxes: [ {
+                    display:false,
+                    ticks: {
+                        display: false,
+                    }
+                } ]
+            },
+            title: {
+                display: false,
+            },
+            elements: {
+                line: {
+                    borderWidth: 2
+                },
+                point: {
+                    radius: 0,
+                    hitRadius: 10,
+                    hoverRadius: 4
+                }
+            }
+        }
+    } );
+
+
+    //WidgetChart 4
+    var ctx = document.getElementById( "widgetChart4" );
+    ctx.height = 70;
+    var myChart = new Chart( ctx, {
+        type: 'bar',
+        data: {
+            labels: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', ''],
+            datasets: [
+                {
+                    label: "My First dataset",
+                    data: [78, 81, 80, 45, 34, 12, 40, 75, 34, 89, 32, 68, 54, 72, 18, 98],
+                    borderColor: "rgba(0, 123, 255, 0.9)",
+                    //borderWidth: "0",
+                    backgroundColor: "rgba(255,255,255,.3)"
+                }
+            ]
+        },
+        options: {
+              maintainAspectRatio: true,
+              legend: {
+                display: false
+            },
+            scales: {
+                xAxes: [{
+                  display: false,
+                  categoryPercentage: 1,
+                  barPercentage: 0.5
+                }],
+                yAxes: [ {
+                    display: false
+                } ]
+            }
+        }
+    } );
+
+
+
+} )( jQuery );
+
+var sample_data =
+{"af":"16.63","al":"11.58","dz":"158.97","ao":"85.81","ag":"1.1","ar":"351.02","am":"8.83","au":"1219.72","at":"366.26","az":"52.17","bs":"7.54","bh":"21.73","bd":"105.4","bb":"3.96","by":"52.89","be":"461.33","bz":"1.43","bj":"6.49","bt":"1.4","bo":"19.18","ba":"16.2","bw":"12.5","br":"2023.53","bn":"11.96","bg":"44.84","bf":"8.67","bi":"1.47","kh":"11.36","cm":"21.88","ca":"1563.66","cv":"1.57","cf":"2.11","td":"7.59","cl":"199.18","cn":"5745.13","co":"283.11","km":"0.56","cd":"12.6","cg":"11.88","cr":"35.02","ci":"22.38","hr":"59.92","cy":"22.75","cz":"195.23","dk":"304.56","dj":"1.14","dm":"0.38","do":"50.87","ec":"61.49","eg":"216.83","sv":"21.8","gq":"14.55","er":"2.25","ee":"19.22","et":"30.94","fj":"3.15","fi":"231.98","fr":"2555.44","ga":"12.56","gm":"1.04","ge":"11.23","de":"3305.9","gh":"18.06","gr":"305.01","gd":"0.65","gt":"40.77","gn":"4.34","gw":"0.83","gy":"2.2","ht":"6.5","hn":"15.34","hk":"226.49","hu":"132.28","is":"12.77","in":"1430.02","id":"695.06","ir":"337.9","iq":"84.14","ie":"204.14","il":"201.25","it":"2036.69","jm":"13.74","jp":"5390.9","jo":"27.13","kz":"129.76","ke":"32.42","ki":"0.15","kr":"986.26","undefined":"5.73","kw":"117.32","kg":"4.44","la":"6.34","lv":"23.39","lb":"39.15","ls":"1.8","lr":"0.98","ly":"77.91","lt":"35.73","lu":"52.43","mk":"9.58","mg":"8.33","mw":"5.04","my":"218.95","mv":"1.43","ml":"9.08","mt":"7.8","mr":"3.49","mu":"9.43","mx":"1004.04","md":"5.36","mn":"5.81","me":"3.88","ma":"91.7","mz":"10.21","mm":"35.65","na":"11.45","np":"15.11","nl":"770.31","nz":"138","ni":"6.38","ne":"5.6","ng":"206.66","no":"413.51","om":"53.78","pk":"174.79","pa":"27.2","pg":"8.81","py":"17.17","pe":"153.55","ph":"189.06","pl":"438.88","pt":"223.7","qa":"126.52","ro":"158.39","ru":"1476.91","rw":"5.69","ws":"0.55","st":"0.19","sa":"434.44","sn":"12.66","rs":"38.92","sc":"0.92","sl":"1.9","sg":"217.38","sk":"86.26","si":"46.44","sb":"0.67","za":"354.41","es":"1374.78","lk":"48.24","kn":"0.56","lc":"1","vc":"0.58","sd":"65.93","sr":"3.3","sz":"3.17","se":"444.59","ch":"522.44","sy":"59.63","tw":"426.98","tj":"5.58","tz":"22.43","th":"312.61","tl":"0.62","tg":"3.07","to":"0.3","tt":"21.2","tn":"43.86","tr":"729.05","tm":0,"ug":"17.12","ua":"136.56","ae":"239.65","gb":"2258.57","us":"14624.18","uy":"40.71","uz":"37.72","vu":"0.72","ve":"285.21","vn":"101.99","ye":"30.02","zm":"15.69","zw":"5.57"};
+
+document.querySelector(".prev").addEventListener("click", () => {
+date.setMonth(date.getMonth() - 1);
+renderCalendar();
+});
+
+document.querySelector(".next").addEventListener("click", () => {
+date.setMonth(date.getMonth() + 1);
+renderCalendar();
+});
+
+renderCalendar();
+
+
+            </script>
+  </body>
+</html>

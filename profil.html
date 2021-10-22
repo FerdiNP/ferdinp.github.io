@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/310fedaa37.js"></script>
+    <link rel="stylesheet" href="css/profil.css">
+    <title> Dashboard </title>
+</head>
+
+<body>
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#">Dashboard Page</a>
+                <a class="navbar-brand hidden" href="#">D</a>
+            </div>
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <h3 class="menu-title">Menu</h3><!-- /.menu-title -->
+                    <li>
+                        <a href="dashboard.html"> <i class="menu-icon fa fa-home"></i>Home </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="menu-icon fa fa-user"></i>Profile </a>
+                    </li>
+                    <h3 class="menu-title">Features</h3><!-- /.menu-title -->
+                    <li>
+                        <a href="form.html"> <i class="menu-icon fa fa-wpforms"></i>Form </a>
+                    </li>
+                    <li>
+                        <a href="inbox.html"> <i class="menu-icon fa fa-inbox"></i>Inbox</a>
+
+                    </li>
+                    <h3 class="menu-title"> Data </h3><!-- /.menu-title -->
+                    <li>
+                        <a href="table.html"> <i class="menu-icon fa fa-table"></i>Table</a>
+                    </li>
+                    <li>
+                        <a href="calender.html"> <i class="menu-icon fa fa-calendar"></i>Calendar </a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+
+    <div>
+    <div id="right-panel" class="right-panel"  style="background:  #f1f2f7; font-family: 'Open Sans'sans-serif !important;font-size: 16px; width: 100%;">
+
+        <!-- Header-->
+        <header id="header" class="header px-5">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <div class="header-left">
+                        <a id="menuToggle" class="search-trigger pull-left"><i class="fa fa-bars"></i></a>
+                        <div class="dropdown px-3">
+                            <form class="search-container">
+                                <input type="text" id="search-bar" placeholder="What can I help you ? :)">
+                                <a class="search-icon" href="#"><i class="fa fa-search"></i></a>
+                            </form>
+                        </div>
+
+                        <div class="dropdown for-message">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="User Avatar">
+                        </a>
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+        </header><!-- /header -->
+        <br />
+        <br />
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1>Profile</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="padding-bottom:20px;">
+            <div class="row profile">
+                <div class="col-md-3">
+                    <div class="profile-sidebar" style="padding-bottom:0!important;">
+
+                        <!-- SIDEBAR USERPIC -->
+                        <div class="profile-userpic">
+                            <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" class="img-responsive" alt="">
+                        </div>
+                        <!-- END SIDEBAR USERPIC -->
+                        <!-- SIDEBAR USER TITLE -->
+                        <div class="profile-usertitle">
+                            <div class="profile-usertitle-name">
+                                Full Name
+                            </div>
+                            <div class="profile-usertitle-job">
+                                Lorem Ipsum
+                            </div>
+                        </div>
+                        <div class="profile-usermenu">
+
+                        </div>
+                        <!-- END MENU -->
+
+                        <div class="portlet light bordered">
+                            <!-- STAT -->
+                            <div class="row list-separated profile-stat">
+                                <div class="col-md-6 col-sm-4 col-xs-6">
+                                    <div class="uppercase profile-stat-title"> 32 </div>
+                                    <div class="uppercase profile-stat-text"> Followers </div>
+                                </div>
+                                <div class="col-md-6 col-sm-4 col-xs-6">
+                                    <div class="uppercase profile-stat-title"> 66 </div>
+                                    <div class="uppercase profile-stat-text"> Following </div>
+                                </div>
+                            </div>
+                            <!-- END STAT -->
+                            <div class="py-5">
+                                <h4 class="profile-desc-title">About Me</h4>
+                                <span class="profile-desc-text"> Lorem ipsum dolor sit amet diam nonummy nibh dolore diam nonummy diam nonummy. </span>
+
+                                <div class="margin-top-20 profile-desc-link pt-5">
+                                    <i class="fa fa-globe"></i>
+                                    <a href="#"> loremipsum.com</a>
+                                </div>
+                                <div class="margin-top-20 profile-desc-link">
+                                    <i class="fa fa-twitter"></i>
+                                    <a href="#/">@loremipsum</a>
+                                </div>
+                                <div class="margin-top-20 profile-desc-link">
+                                    <i class="fa fa-facebook"></i>
+                                    <a href="#">loremipsum</a>
+                                </div>
+                                <div class="margin-top-20 profile-desc-link">
+                                    <i class="fa fa-instagram"></i>
+                                    <a href="#/">@loremipsum</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-9">
+                    <div class="card" style="margin-bottom:0 !important;">
+                        <div class="card-header">
+                            <strong class="card-title" style="font-size:1.8rem;"> Latest Activity</strong>
+                        </div>
+                        <div class="card-body" style="padding-bottom: 10px!important; padding-top:30px;">
+                          <div class="col-md-12">
+        <div class="col-md-3">
+            <div class="card bg-c-blue order-card">
+                <div class="card-block">
+                    <h2 class="text-right"><i class="fa fa-cart-plus f-left"></i></h2>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="m-b-0" style="font-size:1.8rem; font-weight: bold;">Lorem Ipsum</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card bg-c-green order-card">
+                <div class="card-block" style="color:#61967b;">
+                    <h2 class="text-right"><i class="fa fa-rocket f-left"></i></h2>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="m-b-0" style="font-size:1.8rem; font-weight: bold;">Lorem Ipsum</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card bg-c-yellow order-card">
+                <div class="card-block">
+                    <h2 class="text-right"><i class="fa fa-refresh f-left"></i></h2>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="m-b-0" style="font-size:1.8rem; font-weight: bold;">Lorem Ipsum</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card bg-c-pink order-card">
+                <div class="card-block">
+                    <h2 class="text-right"><i class="fa fa-credit-card f-left"></i></h2>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="m-b-0" style="font-size:1.8rem; font-weight: bold;">Lorem Ipsum</p>
+                </div>
+            </div>
+            </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title" style="font-size:1.8rem;"> Your Profile</strong>
+                        </div>
+                        <div class="card-body">
+                            <div class="profile-content">
+                                <div class="row py-3">
+                                    <div class="col-sm-3">
+                                        <h3 class="mb-0">Full Name</h3>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        Lorem Ipsum
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row py-4">
+                                    <div class="col-sm-3">
+                                        <h3 class="mb-0">Email</h3>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        lorem@ipsum
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row py-4">
+                                    <div class="col-sm-3">
+                                        <h3 class="mb-0">Password</h3>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        *************
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row py-4">
+                                    <div class="col-sm-3">
+                                        <h3 class="mb-0">Phone</h3>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        (239) 816-9029
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row py-4">
+                                    <div class="col-sm-3">
+                                        <h3 class="mb-0">Address</h3>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        Bay Area, San Francisco, CA
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="profile-userbuttons d-flex justify-content-between py-3">
+                                    <button type="button" class="btn btn-success btn-sm">Edit</button>
+                                    <button type="button" class="btn btn-primary btn-sm">Setting </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+          <p class="p1">
+            &copy; Created by Ferdi Naufal
+          </p>
+          <p class="p2">
+            Powered by
+            <a href="https://www.gamelab.id/" target="_blank"> Gamelab.id </a>
+          </p>
+        </footer>
+
+
+
+
+    </div><!-- /#right-panel -->
+    </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+
+jQuery(document).ready(function($) {
+
+	"use strict";
+
+	[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+		new SelectFx(el);
+	} );
+
+	jQuery('.selectpicker').selectpicker;
+
+
+	$('#menuToggle').on('click', function(event) {
+		$('body').toggleClass('open');
+	});
+
+	$('.search-trigger').on('click', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		$('.search-trigger').parent('.header-left').addClass('open');
+	});
+
+	$('.search-close').on('click', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		$('.search-trigger').parent('.header-left').removeClass('open');
+	});
+
+});
+
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+});
+        </script>
+</body>
+
+</html>

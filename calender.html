@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/310fedaa37.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/calender.css">
+
+    <style media="screen">
+    a {
+    text-decoration: none!important;
+}
+    * {
+box-sizing: border-box;
+}
+.card {
+  background-color:#f1f2f7;
+  border-radius: 5px;
+
+}
+.calendar-grid {
+width: 100%;
+height: 90vh;
+grid-gap: 5px 5px;
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+grid-template-rows: 3em 2em;
+grid-auto-rows: 1fr;
+padding-top:1em;
+border-radius: 5px;
+}
+
+.calendar-day {
+padding:.4em;
+height:100%;
+width:100%;
+background: white;
+border-radius:5px;
+font-size: 20px;
+text-align: right;
+}
+
+.current-day {
+background:#fffadf;
+}
+
+.first-day {
+grid-column-start: 4;
+}
+
+.calendar-dayname {
+padding:.3rem;
+text-align:center;
+background:#007bff;
+color: white;
+border-radius: 5px;
+}
+
+.calendar-title {
+text-align:center;
+grid-column: 2 / -2;
+font-size: 2em;
+}
+
+.calendar-nav a {
+display:block;
+width:100%;
+height:100%;
+font-size: 2em;
+cursor: pointer;
+padding-left: 25px;
+}
+
+.calendar-nav__right {
+text-align: right;
+padding-right: 25px;
+}
+
+.fc-color-picker {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+.fc-color-picker>li {
+  float: left;
+  font-size: 30px;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: .75rem 1.25rem;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  .card-title {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 15px;
+  }
+
+  .input-group {
+    position: relative;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+  }
+  .form1 {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #495057;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 transparent;
+    margin: 0;
+  }
+
+   .btn1 {
+     border-top-right-radius: 5px;
+     border-bottom-right-radius: 5px;
+     height: 40px;
+     display: block;
+     margin:8px 0;
+   }
+    </style>
+    <title> Dashboard </title>
+</head>
+
+<body>
+
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default nav-side">
+
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#">Dashboard Page</a>
+                <a class="navbar-brand hidden" href="#">D</a>
+            </div>
+
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <h3 class="menu-title">Menu</h3><!-- /.menu-title -->
+                    <li>
+                        <a href="dashboard.html"> <i class="menu-icon fa fa-home"></i>Home </a>
+                    </li>
+                    <li>
+                        <a href="profil.html"> <i class="menu-icon fa fa-user"></i>Profile </a>
+                    </li>
+                    <h3 class="menu-title">Features</h3><!-- /.menu-title -->
+                    <li>
+                        <a href="form.html"> <i class="menu-icon fa fa-wpforms"></i>Form </a>
+                    </li>
+                    <li>
+                        <a href="inbox.html"> <i class="menu-icon fa fa-inbox"></i>Inbox</a>
+
+                    </li>
+                    <h3 class="menu-title"> Data </h3><!-- /.menu-title -->
+                    <li>
+                        <a href="table.html"> <i class="menu-icon fa fa-table"></i>Table</a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="menu-icon fa fa-calendar"></i>Calendar </a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside><!-- /#left-panel -->
+
+    <!-- Left Panel -->
+
+    <!-- Right Panel -->
+<div>
+    <div id="right-panel" class="right-panel" style="background:  #f1f2f7; font-family: 'Open Sans'sans-serif !important;font-size: 16px; width: 100%;">
+
+        <!-- Header-->
+        <header id="header" class="header">
+
+            <div class="header-menu">
+
+                <div class="col-sm-7">
+                    <div class="header-left">
+                        <a id="menuToggle" class="search-trigger pull-left"><i class="fa fa-bars"></i></a>
+                        <div class="dropdown px-3">
+                            <form class="search-container">
+                                <input type="text" id="search-bar" placeholder="What can I help you ? :)">
+                                <a class="search-icon" href="#"><i class="fa fa-search"></i></a>
+                            </form>
+                        </div>
+
+                        <div class="dropdown for-message">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="message" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-bell"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="User Avatar">
+                        </a>
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i> My Profile</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-cog"></i> Settings</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-power-off"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+        </header><!-- /header -->
+        <br> <br>
+        <div class="breadcrumbs">
+            <div class="col-sm-4">
+                <div class="page-header float-left">
+                    <div class="page-title">
+                        <h1> Calendar </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-5">
+          <div class="card " style="border-radius:2px;box-shadow: 0 0 1px rgb(0 0 0 / 13%),0 1px 3px rgb(0 0 0 / 20%);
+          margin-bottom: 1rem;">
+                <div class="card-header">
+                  <h3 class="card-title">Add Event</h3>
+                </div>
+                <div class="card-body" style="background-color:white;">
+                  <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
+                    <ul class="fc-color-picker" id="color-chooser">
+                      <li><a class="text-primary" href="#"><i class="fa fa-square"></i></a></li>
+                      <li><a class="text-warning" href="#"><i class="fa fa-square"></i></a></li>
+                      <li><a class="text-success" href="#"><i class="fa fa-square"></i></a></li>
+                      <li><a class="text-danger" href="#"><i class="fa fa-square"></i></a></li>
+                      <li><a class="text-muted" href="#"><i class="fa fa-square"></i></a></li>
+                    </ul>
+                  </div>
+                  <!-- /btn-group -->
+                  <div class="input-group">
+                    <input id="new-event" type="text" class="form-control form1" placeholder="Event Title">
+
+                    <div class="input-group-append">
+                      <button id="add-new-event" type="button" class="btn btn-primary btn1">Add</button>
+                    </div>
+                    <!-- /btn-group -->
+                  </div>
+                  <!-- /input-group -->
+                </div>
+          </div>
+        </div>
+        <div class="col-md-9 px-3 py-5">
+<div class="card">
+
+
+<div class="calendar-grid">
+
+</div>
+          </div>
+          </div>
+        <footer>
+            <p class="p1">
+                &copy; Created by Ferdi Naufal
+            </p>
+            <p class="p2">
+                Powered by
+                <a href="https://www.gamelab.id/" target="_blank"> Gamelab.id </a>
+            </p>
+
+        </footer>
+    </div> <!-- .content -->
+    </div><!-- /#right-panel -->
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://res.cloudinary.com/dnuaohahs/raw/upload/v1632021933/calendar_inmjje.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+
+
+    [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+      new SelectFx(el);
+    } );
+
+    jQuery('.selectpicker').selectpicker;
+
+
+    $('#menuToggle').on('click', function(event) {
+      $('body').toggleClass('open');
+    });
+
+    $('.search-trigger').on('click', function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      $('.search-trigger').parent('.header-left').addClass('open');
+    });
+
+    $('.search-close').on('click', function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      $('.search-trigger').parent('.header-left').removeClass('open');
+    });
+  });
+
+                  displayCalendar(calendarSettings);
+
+document.addEventListener('contextmenu', function(e) {
+e.preventDefault();
+});
+
+    </script>
+</body>
+
+</html>
